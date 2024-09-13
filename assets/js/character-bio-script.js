@@ -65,7 +65,7 @@ function init() {
     // loadCharacterStrategy();
     // loadCharacterCombo;
     // loadCharacterReplay();
-    let charSelect = characters.find(character => character.name === 'fff');
+    let charSelect = getCharSelect();
     console.log(charSelect);
     loadPage(charSelect);
 }

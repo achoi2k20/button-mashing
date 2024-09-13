@@ -57,4 +57,29 @@ function characterFav() {
     const luke = new Character('Luke',lukeProfileImg,lukeBio,lukeBioShort,lukeStrategy,lukeCombos,lukeReplays);
     characters.push(luke);
  
+// localStorage logic for characters
+function storeCharSelect(charSelect) {
+    localStorage.setItem('charSelect', JSON.stringify(charSelect));
+};
 
+function getCharSelect() {
+    return JSON.parse(localStorage.getItem('charSelect'));
+}
+
+// event listeners for each image
+const ryuSelect = document.getElementById('ryu');
+const lukeSelect = document.getElementById('luke');
+
+ryuSelect.addEventListener('click', function(event) {
+    event.preventDefault();
+    storeCharSelect(ryu);
+    console.log("stored");
+    window.location.href = './characterbio.html';
+})
+
+lukeSelect.addEventListener('click', function(event) {
+    event.preventDefault();
+    storeCharSelect(luke);
+    console.log("stored");
+    window.location.href = './characterbio.html';
+})
