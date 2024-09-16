@@ -100,16 +100,16 @@ main {
     margin: 10px auto;
     top: 40px;
     z-index: 2;
-    color: #ff7b00 !important;
-    background-image: url('https://i2.pngimg.me/thumb/f/720/comdlpng6938138.jpg');
-    background-size: contain; /* This ensures the background fits */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-position: center; /* Centers the paint splatter */
+    background-image: url('https://www.pngkey.com/png/full/77-774904_black-ink-png-png-library-black-spray-png.png');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center; 
 }
 
 
 .featured-characters >h2 {
-  color: rgb(255, 123, 0);
+  color: rgb(201, 100, 0);
+  font-size: 40px;
 }
 
 
